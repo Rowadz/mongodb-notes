@@ -7,7 +7,7 @@ This document will just show some points that we should keep in mind while worki
 - Data modeling principles from relational databases will give you hard time if used in [MongoDB](https://www.mongodb.com/)
 - Data that are accessed together is stored together.
 - The way you model your documents should be governed by how your clients uses the data.
-- Use something like [MongoDB Compass](https://www.mongodb.com/products/compass) to see your stroed data, and don't depend on ODMs(object document mappers) to see them, looking at how the data is stored and their types using [MongoDB Compass](https://www.mongodb.com/products/compass) will help you on the long term.
+- Use something like [MongoDB Compass](https://www.mongodb.com/products/compass) to see your stored data, and don't depend on ODMs(object document mappers) to see them, looking at how the data is stored and their types using [MongoDB Compass](https://www.mongodb.com/products/compass) will help you on the long term.
 
 # 💃 How to model
 
