@@ -1,0 +1,19 @@
+{
+  "name": "mongodb-notes",
+  "version": "1.0.0",
+  "description": "When you start learning about them you will see them like this:",
+  "main": "index.js",
+  "dependencies": {
+    "docsify": "^4.12.1"
+  },
+  "devDependencies": {
+    "docsify-cli": "^4.4.3"
+  },
+  "scripts": {
+    "dev": "docsify serve .",
+    "docsify": "docsify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
