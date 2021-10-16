@@ -12,7 +12,7 @@ This document will just show some points that we should keep in mind while worki
 # 💃 How to model
 
 - Think about how your application consumes your data, not the relations between data.
-- Embedding data that are related are generally a good idea.
+- Embedding data that are related is generally a good idea.
 
 Asking yourself questions like
 
