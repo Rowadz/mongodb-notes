@@ -17,8 +17,8 @@ This document will just show some points that we should keep in mind while worki
 Asking yourself questions like
 
 - What does my app do?
-- What gets reads & writes
-- what does my data look like when it's being used (how does the client uses the data)
+- What gets reads & writes?
+- what does my data look like when it's being used (how does the client uses the data)?
 
 Will help you organize your documents.
 
