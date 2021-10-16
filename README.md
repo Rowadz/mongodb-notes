@@ -187,21 +187,21 @@ In [MongoDB](https://www.mongodb.com/), you also nest these related data
     _id: ObjectId,
     name: 'rowadz',
     rooms: [
-      { room_id: ObjectId(A), joined_data: Date(01 / 01 / 2991) },
-      { room_id: ObjectId(B), joined_data: Date(05 / 12 / 2014) },
+      { room_id: ObjectId(A), joined_data: Date(01 / 01 / 2991), title: 'my room' },
+      { room_id: ObjectId(B), joined_data: Date(05 / 12 / 2014), title: 'another room' },
     ],
   },
   {
     _id: ObjectId,
     name: 'sara',
-    rooms: [{ room_id: ObjectId(A), joined_data: Date(01 / 01 / 2414) }],
+    rooms: [{ room_id: ObjectId(A), joined_data: Date(01 / 01 / 2414). title: 'my room' }],
   },
   {
     _id: ObjectId,
     name: 'koa',
     rooms: [
-      { room_id: ObjectId(A), joined_data: Date(01 / 01 / 2941) },
-      { room_id: ObjectId(B), joined_data: Date(11 / 11 / 2014) },
+      { room_id: ObjectId(A), joined_data: Date(01 / 01 / 2941), title: 'my room' },
+      { room_id: ObjectId(B), joined_data: Date(11 / 11 / 2014), title: 'another room' },
     ],
   },
 ]
