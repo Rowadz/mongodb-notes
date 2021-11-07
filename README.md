@@ -216,7 +216,7 @@ And now on AVERAGE each book might have 20 users that bought it, except 1 book t
 
 > This list could also be stored in a different collection, and our document can just refernce the other document from another collection that points to the 20 million users.
 
-> each document have a max size of 16MB (you can increase that)
+> each document have a max size of 16MB (???you can increase that???)
 
 > We can use things like [$lookup](https://docs.mongodb.com/manual/reference/operator/aggregation/lookup/) or [$graphLookup](https://docs.mongodb.com/manual/reference/operator/aggregation/graphLookup/) but doing a lot of them is a sign that your documents are not modeled correctly plus using them a lot in the same aggregation might affect the speed of getting the related data.
 
