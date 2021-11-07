@@ -7,18 +7,18 @@ This document will just show some points that we should keep in mind while worki
 - Data modeling principles from relational databases will give you hard time if used in [MongoDB](https://www.mongodb.com/)
 - Data that are accessed together is stored together.
 - The way you model your documents should be governed by how your clients uses the data.
-- Use something like [MongoDB Compass](https://www.mongodb.com/products/compass) to see your stroed data, and don't depend on ODMs(object document mappers) to see them, looking at how the data is stored and their types using [MongoDB Compass](https://www.mongodb.com/products/compass) will help you on the long term.
+- Use something like [MongoDB Compass](https://www.mongodb.com/products/compass) to see your stored data, and don't depend on ODMs(object document mappers) to see them, looking at how the data is stored and their types using [MongoDB Compass](https://www.mongodb.com/products/compass) will help you on the long term.
 
 # 💃 How to model
 
 - Think about how your application consumes your data, not the relations between data.
-- Embedding data that are related are generally a good idea.
+- Embedding data that are related is generally a good idea.
 
 Asking yourself questions like
 
 - What does my app do?
-- What gets reads & writes
-- what does my data look like when it's being used (how does the client uses the data)
+- What gets reads & writes?
+- what does my data look like when it's being used (how does the client uses the data)?
 
 Will help you organize your documents.
 
@@ -187,21 +187,21 @@ In [MongoDB](https://www.mongodb.com/), you also nest these related data
     _id: ObjectId,
     name: 'rowadz',
     rooms: [
-      { room_id: ObjectId(A), joined_data: Date(01 / 01 / 2991) },
-      { room_id: ObjectId(B), joined_data: Date(05 / 12 / 2014) },
+      { room_id: ObjectId(A), joined_data: Date(01 / 01 / 2991), title: 'my room' },
+      { room_id: ObjectId(B), joined_data: Date(05 / 12 / 2014), title: 'another room' },
     ],
   },
   {
     _id: ObjectId,
     name: 'sara',
-    rooms: [{ room_id: ObjectId(A), joined_data: Date(01 / 01 / 2414) }],
+    rooms: [{ room_id: ObjectId(A), joined_data: Date(01 / 01 / 2414). title: 'my room' }],
   },
   {
     _id: ObjectId,
     name: 'koa',
     rooms: [
-      { room_id: ObjectId(A), joined_data: Date(01 / 01 / 2941) },
-      { room_id: ObjectId(B), joined_data: Date(11 / 11 / 2014) },
+      { room_id: ObjectId(A), joined_data: Date(01 / 01 / 2941), title: 'my room' },
+      { room_id: ObjectId(B), joined_data: Date(11 / 11 / 2014), title: 'another room' },
     ],
   },
 ]
