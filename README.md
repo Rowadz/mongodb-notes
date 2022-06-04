@@ -147,7 +147,7 @@ In realtional DB m:m relation will look like this
 > a user can enter many rooms
 > a room can contain many users
 
-To model this in SQL we use 3 tables.
+To model this in relational database we use 3 tables.
 
 Users table
 
